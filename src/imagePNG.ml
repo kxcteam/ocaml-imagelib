@@ -84,7 +84,7 @@ end = struct
     let i = create Bigarray.char Bigarray.c_layout Zl.io_buffer_size in
     let o = create Bigarray.char Bigarray.c_layout Zl.io_buffer_size in
     let w = De.make_window ~bits:15 in
-    let q = De.Queue.create 0x1000 in
+    let q = De.Queue.create 0x10000 in
     let b = Buffer.create 0x1000 in
     let p = ref 0 in
 
